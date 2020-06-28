@@ -3,34 +3,64 @@
 * {
   box-sizing: border-box;
 }
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+ }
+ 
+  .col-lg-4 {
+    width: 31.33%;
+    margin-right: 1%;
+    margin-left: 1%
+  }
+  
+}
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+    
+}
+  .col-md-6 {
+    width: 48%;
+    margin-right: 1%;
+    margin-left: 1%
+
+  }
+  .col-md-12{
+    width: 100%;
+  }
+}
  body{
-	background-color: white;
+	background-color: #F5F5DC;
 	font-family: Helvetica, sans-serif;
 	font-weight: bold;
 	box-sizing: border-box;
 	position: relative;
-
+  margin: auto;
 	}
 
 .content {
   font-size: 12.5px;
   clear: both;
-  min-height: 250px;
+  height: 250px;
   padding: 10px;
   text-align: left;
-
-  
+  overflow: auto; 
+  color: #191970;
 }
-section{
-  background-color: blue;
+section {
+  background-color: #87CEFA;
   text-align: right;
   position: relative;
   margin-bottom: 10px;
-  margin: 3px solid black;
+  border: 1px solid black;
+  
  
 }
 .subtitle {
-  background-color: red;
+  background-color: #00CED1;
   background-size: auto;
   position: relative;
   float: right;
@@ -42,39 +72,14 @@ section{
 }
 h1 { 
   text-align: center;
+  color: #696969;
 }
 .row {
   width: 100%;
 }
 
 
-/********** Large devices only **********/
-@media (min-width: 992px) {
-  .col-lg-4 {
-    float: left;
-    border: 10px solid white;
 
-  }
- 
-  .col-lg-4 {
-    width: 33.33%;
-  }
-  
-}
-
-/********** Medium devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
-  .col-md-6 {
-    float: left;
-    border: 10px solid white;
-
-  }
-  
-  .col-md-6 {
-    width: 50%;
-
-  }
-}
 
 
 
